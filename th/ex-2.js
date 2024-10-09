@@ -6,7 +6,31 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
+//Start coding here
+function sumNegativeNumbers(numbers){
+    return numbers.filter(numbers => numbers < 0).reduce((acc,current)=>acc + current,0)
+}
+
 // Start coding here
+// function sumNegativeNumbers(numbers){
+//     return numbers.reduce((acc,current)=>{
+//         if (current < 0) {
+//             return acc + current;
+//         }
+//         return acc;
+//     },0)
+// }
+
+// function sumNegativeNumbers(numbers) {
+//     let r = 0;
+//     numbers.map(number => {
+//         if (number < 0) {
+//             r += number;
+//         }
+//     });
+//     return r;
+// }
+
 
 const numbers1 = [3, -5, 10, 12, -7, 0, 8, 2];
 console.log(sumNegativeNumbers(numbers1)); // -12
